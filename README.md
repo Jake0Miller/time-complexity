@@ -12,4 +12,8 @@ Think about what I did: we have 1,000,001 numbers, and for EVERY single one of t
 
 Rewrite this without using NESTED .each statements (.each inside another .each). You can use multiple .each statements if you want to (this might be a good idea!), but don't put them INSIDE each other. Looping over 1,000,000 numbers twice is only 2,000,000 loops, which is way better than 1,000,000,000,000!
 
+Does the difference between two .each loops one after the other vs one INSIDE the other make sense? This is the crux of the problem!
+
+In Big O Notation, the method I wrote is O(n^2). For n numbers, we do n*n (or n^2) loops. If you can rewrite it with two .each statements back to back, that's O(n) instead of O(n^2). It actually uses 2*n loops, but even if it was 10*n or 100*n, that would be way better than n*n!
+
 After you solve this, write another version of your efficient method that finds the duplicated numbers (not just counts them!)
