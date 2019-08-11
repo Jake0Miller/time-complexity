@@ -1,8 +1,10 @@
+# Time Complexity
+
 We want to find all the numbers that appear in an array more than once.
 
-The small array has 101 elements + 10 duplicates
-The medium array has 10,001 elements + 100 duplicates
-The large array has 1,000,001 elements + 1,000 duplicates
+The small array has 101 elements + 10 duplicates  
+The medium array has 10,001 elements + 100 duplicates  
+The large array has 1,000,001 elements + 1,000 duplicates  
 
 You start with a working method that COUNTS the duplicates in each array. The test for the large array is skipped (it will take a very long time to run right now!) You want to make this efficient.
 
