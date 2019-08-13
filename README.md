@@ -1,5 +1,7 @@
 # Time Complexity
 
+## Duplicate Elements
+
 We want to find all the numbers that appear in an array more than once.
 
 The small array has 101 elements + 10 duplicates  
@@ -17,3 +19,9 @@ Does the difference between two .each loops one after the other vs one INSIDE th
 In Big O Notation, the method I wrote is O(n^2). This means if we have n numbers, we do n\*n (or n^2) loops. If you can rewrite this with two .each statements back to back, that's considered O(n) instead of O(n^2). It actually uses 2n loops, but even 10n or 100n would be way better than n\*n!
 
 After you solve this, write another version of your efficient method that finds the duplicated numbers (not just counts them!)
+
+## Odd Entries
+
+This time you start with a method that counts the number of duplicates in an array with a single .each statement.
+
+Your goal is to write find_odd_entries, which finds all the elements that appear in the array an odd number of times. Can you do this with one .each statement?
