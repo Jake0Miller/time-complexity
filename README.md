@@ -14,6 +14,6 @@ Rewrite this without using NESTED .each statements (.each inside another .each).
 
 Does the difference between two .each loops one after the other vs one INSIDE the other make sense? This is the crux of the problem!
 
-In Big O Notation, the method I wrote is O(n^2). For n numbers, we do n*n (or n^2) loops. If you can rewrite it with two .each statements back to back, that's O(n) instead of O(n^2). It actually uses 2*n loops, but even if it was 10*n or 100*n, that would be way better than n*n!
+In Big O Notation, the method I wrote is O(n^2). For n numbers, we do n\*n (or n^2) loops. If you can rewrite it with two .each statements back to back, that's O(n) instead of O(n^2). It actually uses 2n loops, but even if it was 10*n or 100n, that would be way better than n*n!
 
 After you solve this, write another version of your efficient method that finds the duplicated numbers (not just counts them!)
