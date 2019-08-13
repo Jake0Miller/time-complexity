@@ -25,21 +25,21 @@ class OddEntriesTest < Minitest::Test
   def test_find_duplicates_in_small_array
     skip
     duplicates = @small.find_duplicates
-    assert_equal 20, duplicates.length
+    assert_equal 110, duplicates.length
     assert duplicates.all? {|num| num >= 0 && num <= 100}
   end
 
   def test_find_duplicates_in_mid_array
     skip
     duplicates = @mid.find_duplicates
-    assert_equal 200, duplicates.length
+    assert_equal 10_100, duplicates.length
     assert duplicates.all? {|num| num >= 0 && num <= 10_000}
   end
 
   def test_find_duplicates_in_large_array
     skip
     duplicates = @large.find_duplicates
-    assert_equal 2_000, duplicates.length
+    assert_equal 1_001_000, duplicates.length
     assert duplicates.all? {|num| num >= 0 && num <= 1_000_000}
   end
 end
