@@ -10,7 +10,7 @@ You start with a working method that COUNTS the duplicates in each array. The te
 
 Think about what I did: we have 1,000,001 numbers, and for EVERY single one of them, we want to compare it to 1,000,000 OTHER numbers to check if they're the same. That's 1 million * 1 million, or 1,000,000,000,000 loops!
 
-Rewrite this without using NESTED .each statements (.each inside another .each). You can use multiple .each statements if you want to (this might be a good idea!), but don't put them INSIDE each other. Looping over 1,000,000 numbers twice is only 2,000,000 loops, which is way better than 1,000,000,000,000!
+Rewrite this without using NESTED .each statements (.each inside another .each). You can use multiple .each statements to solve the problem (this might be a good idea!), but don't put them INSIDE each other. Looping over 1,000,000 numbers twice is only 2,000,000 loops, which is way better than 1,000,000,000,000!
 
 Does the difference between two .each loops one after the other vs one INSIDE the other make sense? This is the crux of the problem!
 
